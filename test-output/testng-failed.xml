@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="BrowserType" value="Firefox"/>
+  <parameter name="URL" value="http://localhost:4200/"/>
+  <test parallel="none" name="Test on Chrome(failed)">
+    <parameter name="BrowserType" value="Chrome"/>
+    <classes>
+      <class name="com.Yale_Test_Automated.Consultar_Test">
+        <methods>
+          <include name="DocumentoVacio"/>
+          <include name="Consultar" invocation-numbers="1"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.Yale_Test_Automated.Consultar_Test -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
