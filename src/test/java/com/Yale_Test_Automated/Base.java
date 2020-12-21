@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -28,8 +29,8 @@ public class Base {
 	}
 	
 	public WebDriver IEDriverConnection() {
-		System.setProperty("webdriver.ie.driver","./src/test/resources/chromedriver/IEDriverServer.exe");
-		driver= new InternetExplorerDriver();
+		System.setProperty("webdriver.edge.driver","./src/test/resources/chromedriver/msedgedriver.exe");
+		driver= new EdgeDriver();
 		return driver;
 	}
 	
@@ -65,6 +66,7 @@ public class Base {
 	public void visit(String url) {
 		driver.get(url);
 	}
+	
 	
 	
 }

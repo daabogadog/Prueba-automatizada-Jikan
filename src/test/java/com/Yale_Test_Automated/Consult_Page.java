@@ -1,7 +1,14 @@
 package com.Yale_Test_Automated;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class Consult_Page extends Base {
@@ -76,6 +83,59 @@ public class Consult_Page extends Base {
 
 	public boolean isHomePageDisplayed_No_Valido() {
 		return isDisplayed(NoInformacion);
+	}
+
+	//private WebDriver driver;	
+	
+	public boolean chechingPageLink(WebDriver driver) {
+	  List<WebElement> Links = driver.findElements(By.tagName("a"));
+	  String url="";
+	  List<String> brokenLinks = new ArrayList<String>();
+	  List<String> OkLinks = new ArrayList<String>();
+	  
+	  HttpURLConnection httpConection = null;
+	  int responseCode=200;
+	  Iterator<WebElement> it = Links.iterator();
+	  
+	  while (it.hasNext()) {
+		  url = it.next().getAttribute("href");
+		  if(url==null || url.isEmpty()) {
+			  System.out.println(url+"url no configurada o vacia");
+			  continue;
+		  }
+		  try {
+			  httpConection = (HttpURLConnection)(new URL(url).openConnection());
+			  httpConection.setRequestMethod("HEAD");
+			  httpConection.connect();
+			  responseCode = httpConection.getResponseCode();
+			  
+			  if(responseCode>400) {
+				  System.out.println("Error Link: -- "+ url);
+				  brokenLinks.add(url);
+			  }else {
+				  System.out.println("Valido Link: -- "+ url);
+				  OkLinks.add(url);
+			  }
+			  
+			  
+		  } catch (Exception e){
+			  e.printStackTrace();
+		  }
+	  }
+	  
+	System.out.println("Links Validos: -- "+OkLinks.size());
+	System.out.println("Links Invalidos: -- "+brokenLinks.size());
+	
+	if (brokenLinks.size()>0) {
+		System.out.println("**** ERROR ------------------- lINK ROTOS");
+		for (int i =0;i <brokenLinks.size();i++) {
+			System.out.println(brokenLinks.get(i));	
+		}
+		return false;
+	} else {
+		return true;
+	}
+	
 	}
 
 }

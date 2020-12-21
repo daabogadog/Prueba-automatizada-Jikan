@@ -3,14 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test">
+      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Login">
         <methods>
-          <include name="DocumentoVacio"/>
-          <include name="setUp"/>
-          <include name="afterClass"/>
-          <include name="DocumentoSinRegistro"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- com.Yale_Test_Automated.Consultar_Test -->
+      </class> <!-- com.Yale_Test_Automated.Consultar_Test_Encuesta_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
