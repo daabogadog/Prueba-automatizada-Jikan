@@ -1,4 +1,4 @@
-package com.Yale_Test_Automated;
+package com.Yale_Test_Encuesta;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

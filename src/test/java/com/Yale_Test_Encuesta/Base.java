@@ -1,4 +1,4 @@
-package com.Yale_Test_Automated;
+package com.Yale_Test_Encuesta;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package com.Yale_Test_Automated;
+package com.Yale_Test_Pedido;
 
 import static org.testng.Assert.assertTrue;
 
@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.Yale_Test_Encuesta.Consult_Page;
 
 public class Consultar_Test_Pedido {
 
