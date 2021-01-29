@@ -1,4 +1,4 @@
-package com.Yale_Test_Encuesta;
+package com.Jikan_Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +12,7 @@ public class Base {
 
 	private WebDriver driver;
 	
+	//Metodos de Selenium que se van a usar
 	public Base(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -54,6 +55,10 @@ public class Base {
 		driver.findElement(locator).click();
 	}
 	
+	public void clear(By locator) {
+		driver.findElement(locator).clear();;
+	}
+	
 	public Boolean isDisplayed(By locator) {
 		
 		try {
@@ -67,6 +72,10 @@ public class Base {
 		driver.get(url);
 	}
 	
+	public String istext(By locator) {
+		String a =driver.findElement(locator).getText();
+		return a;
+	}
 	
 	
 }

@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]">
-  <parameter name="BrowserType" value="Chrome"/>
-  <parameter name="URL" value="http://localhost:4300/"/>
-  <test parallel="none" name="Test on Chrome consultar pedido(failed)">
+  <parameter name="BrowserType" value="Edge"/>
+  <parameter name="URL" value="https://jikan.moe/"/>
+  <test parallel="none" name="Test on Chrome landing page Jikan(failed)">
     <parameter name="BrowserType" value="Chrome"/>
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Pedido">
+      <class name="com.Jikan_Test.Test_Page">
         <methods>
-          <include name="Validar_Estados"/>
+          <include name="Validar_Link_Rotos"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.Yale_Test_Automated.Consultar_Test_Pedido -->
+      </class> <!-- com.Jikan_Test.Test_Page -->
     </classes>
-  </test> <!-- Test on Chrome consultar pedido(failed) -->
+  </test> <!-- Test on Chrome landing page Jikan(failed) -->
+  <test parallel="none" name="Test on FireFox landing page Jikan(failed)">
+    <parameter name="BrowserType" value="Firefox"/>
+    <classes>
+      <class name="com.Jikan_Test.Test_Page">
+        <methods>
+          <include name="Validar_Link_Rotos"/>
+          <include name="Validar_Busqueda_Anime"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Jikan_Test.Test_Page -->
+    </classes>
+  </test> <!-- Test on FireFox landing page Jikan(failed) -->
+  <test parallel="none" name="Test on Edge landing page Jikan(failed)">
+    <parameter name="BrowserType" value="Edge"/>
+    <classes>
+      <class name="com.Jikan_Test.Test_Page">
+        <methods>
+          <include name="Validar_Link_Rotos"/>
+          <include name="Validar_Busqueda_Anime"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Jikan_Test.Test_Page -->
+    </classes>
+  </test> <!-- Test on Edge landing page Jikan(failed) -->
 </suite> <!-- Failed suite [Suite] -->

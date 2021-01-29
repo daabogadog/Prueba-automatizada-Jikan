@@ -1,150 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
- <parameter name="URL" value="http://localhost:4300/"/>  
+ <parameter name="URL" value="https://jikan.moe/"/>  
   
   
-  <test  name="Test on Chrome consultar pedido">
-    <parameter name="BrowserType" value="Chrome"/>
-     
+  <test  name="Test on Chrome landing page Jikan">
+    <parameter name="BrowserType" value="Chrome"/>     
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Pedido"/>
-    </classes>
-  </test> <!-- 
-  <test  name="Test on FireFox consultar pedido">
-  <parameter name="BrowserType" value="Firefox"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test"/>
+      <class name="com.Jikan_Test.Test_Page"/>
     </classes>
   </test> 
-  <test  name="Test on Edge consultar pedido">
-  <parameter name="BrowserType" value="Edge"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test"/>
-    </classes>
-  </test> -->
-  <!-- ////////////////////////////////////////////// -->
-   <!-- 
-  <test  name="Test on Chrome Encuesta crear preguntas">
-    <parameter name="BrowserType" value="Chrome"/>
-    <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta"/>
-    </classes>
-  </test>
-  <test  name="Test on FireFox Encuesta  crear preguntas">
+  
+  <test  name="Test on FireFox landing page Jikan">
   <parameter name="BrowserType" value="Firefox"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta"/>
-    </classes>
-  </test>
-  <test  name="Test on Edge Encuesta crear preguntas">
-  <parameter name="BrowserType" value="Edge"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta"/>
-    </classes>
-   </test>
-   -->
-   <!-- ////////////////////////////////////////////// -->
-  <!--
-  <test  name="Test on Chrome Encuesta paginacion">
-    <parameter name="BrowserType" value="Chrome"/>
-    <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Paginacion"/>
+      <class name="com.Jikan_Test.Test_Page"/>
     </classes>
   </test> 
-  <test  name="Test on FireFox Encuesta paginacion">
-  <parameter name="BrowserType" value="Firefox"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Paginacion"/>
-    </classes>
-  </test>
-  <test  name="Test on Edge Encuesta paginacion">
-  <parameter name="BrowserType" value="Internet Explorer"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Paginacion"/>
-    </classes>
-   </test>
-   -->
-   <!-- ////////////////////////////////////////////// -->
-  <!--
-  <test  name="Test on Chrome Encuesta editar">
-    <parameter name="BrowserType" value="Chrome"/>
-    <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Editar"/>
-    </classes>
-  </test>  
-  <test  name="Test on FireFox Encuesta editar">
-  <parameter name="BrowserType" value="Firefox"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Editar"/>
-    </classes>
-  </test>
-  
-  <test  name="Test on Egde Encuesta editar">
+  <test  name="Test on Edge landing page Jikan">
   <parameter name="BrowserType" value="Edge"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Editar"/>
+      <class name="com.Jikan_Test.Test_Page"/>
     </classes>
-   </test>-->
-   <!-- ////////////////////////////////////////////// -->
-   <!--
-  <test  name="Test on Chrome Encuesta Validar link">
-    <parameter name="BrowserType" value="Chrome"/>
-    <parameter name="URL_encuesta" value="https://seguimiento.yalecolombia.com/"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.RevisarLinks"/>
-    </classes>
-  </test>  
-  <test  name="Test on FireFox Encuesta Validar link">
-  <parameter name="BrowserType" value="Firefox"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.RevisarLinks"/>
-    </classes>
-  </test>
-  <test  name="Test on Edge Encuesta Validar link">
-  <parameter name="BrowserType" value="Internet Explorer"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.RevisarLinks"/>
-    </classes>
-   </test>
-   -->
-   <!-- ////////////////////////////////////////////// -->
-   
-   <!--
-  <test  name="Test on Chrome Encuesta Login ">
-    <parameter name="BrowserType" value="Chrome"/>
-    <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Login"/>
-    </classes>
-  </test>  
-  <test  name="Test on FireFox Encuesta Login ">
-  <parameter name="BrowserType" value="Firefox"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-     <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Login"/>
-    </classes>
-  </test>
-  <test  name="Test on Edge Encuesta Login">
-  <parameter name="BrowserType" value="Internet Explorer"/>
-  <parameter name="URL_encuesta" value="http://localhost:4200/sample"/>
-    <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Login"/>
-    </classes>
-   </test>
-   -->
-   
+  </test> 
   
 </suite> 
 

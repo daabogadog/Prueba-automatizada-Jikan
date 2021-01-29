@@ -3,11 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.Yale_Test_Automated.Consultar_Test_Encuesta_Login">
+      <class name="com.Jikan_Test.Test_Page">
         <methods>
-          <include name="Login"/>
+          <include name="Validar_Link_Rotos"/>
+          <include name="Validar_Busqueda_Anime"/>
         </methods>
-      </class> <!-- com.Yale_Test_Automated.Consultar_Test_Encuesta_Login -->
+      </class> <!-- com.Jikan_Test.Test_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

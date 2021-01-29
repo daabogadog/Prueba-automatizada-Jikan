@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="12" passed="3" failed="1" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-21T19:19:52Z" name="Suite" finished-at="2020-12-21T19:20:20Z" duration-ms="28272">
+  <suite started-at="2021-01-29T02:03:58Z" name="Suite" finished-at="2021-01-29T02:07:14Z" duration-ms="196575">
     <groups>
     </groups>
-    <test started-at="2020-12-21T19:19:52Z" name="Test on Chrome consultar pedido" finished-at="2020-12-21T19:20:20Z" duration-ms="28272">
-      <class name="com.Yale_Test_Automated.Consultar_Test_Pedido">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Yale_Test_Automated.Consultar_Test_Pedido@14f232c4]" started-at="2020-12-21T14:19:52Z" name="setUp" finished-at="2020-12-21T14:20:00Z" duration-ms="8669" status="PASS">
+    <test started-at="2021-01-29T02:03:58Z" name="Test on Chrome landing page Jikan" finished-at="2021-01-29T02:05:10Z" duration-ms="72199">
+      <class name="com.Jikan_Test.Test_Page">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4b2c5e02]" started-at="2021-01-28T21:03:58Z" name="setUp" finished-at="2021-01-28T21:04:09Z" duration-ms="11629" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://localhost:4300/]]>
+                <![CDATA[https://jikan.moe/]]>
               </value>
             </param>
             <param index="1">
@@ -23,43 +23,369 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Consultar(java.lang.String, java.lang.String)[pri:0, instance:com.Yale_Test_Automated.Consultar_Test_Pedido@14f232c4]" started-at="2020-12-21T14:20:00Z" name="Consultar" data-provider="Data_prueba" finished-at="2020-12-21T14:20:07Z" duration-ms="6688" status="PASS">
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4b2c5e02]" started-at="2021-01-28T21:04:09Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:04:12Z" duration-ms="2526" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Orden de venta (OV)]]>
+                <![CDATA[Naruto]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Consultar -->
-        <test-method signature="Consultar(java.lang.String, java.lang.String)[pri:0, instance:com.Yale_Test_Automated.Consultar_Test_Pedido@14f232c4]" started-at="2020-12-21T14:20:07Z" name="Consultar" data-provider="Data_prueba" finished-at="2020-12-21T14:20:14Z" duration-ms="6407" status="PASS">
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4b2c5e02]" started-at="2021-01-28T21:04:12Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:04:14Z" duration-ms="2344" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Número de Guía]]>
+                <![CDATA[Pokemon]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Consultar -->
-        <test-method signature="Validar_Estados()[pri:0, instance:com.Yale_Test_Automated.Consultar_Test_Pedido@14f232c4]" started-at="2020-12-21T14:20:14Z" name="Validar_Estados" finished-at="2020-12-21T14:20:20Z" duration-ms="6497" status="PASS">
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4b2c5e02]" started-at="2021-01-28T21:04:14Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:04:17Z" duration-ms="2376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Death note]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validar_Estados -->
-      </class> <!-- com.Yale_Test_Automated.Consultar_Test_Pedido -->
-    </test> <!-- Test on Chrome consultar pedido -->
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Link_Rotos()[pri:0, instance:com.Jikan_Test.Test_Page@4b2c5e02]" started-at="2021-01-28T21:04:17Z" name="Validar_Link_Rotos" finished-at="2021-01-28T21:05:10Z" duration-ms="53310" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Existen link rotos expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Existen link rotos expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.Jikan_Test.Test_Page.Validar_Link_Rotos(Test_Page.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Link_Rotos -->
+      </class> <!-- com.Jikan_Test.Test_Page -->
+    </test> <!-- Test on Chrome landing page Jikan -->
+    <test started-at="2021-01-29T02:05:11Z" name="Test on FireFox landing page Jikan" finished-at="2021-01-29T02:06:12Z" duration-ms="61588">
+      <class name="com.Jikan_Test.Test_Page">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4d6025c5]" started-at="2021-01-28T21:05:11Z" name="setUp" finished-at="2021-01-28T21:05:11Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jikan.moe/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AV25071', ip: '172.18.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AV25071', ip: '172.18.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at com.Jikan_Test.Base.FirefoxDriverConnection(Base.java:28)
+	at com.Jikan_Test.Test_Page.setUp(Test_Page.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4d6025c5]" started-at="2021-01-28T21:06:12Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:06:12Z" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Naruto]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4d6025c5]" started-at="2021-01-28T21:06:12Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:06:12Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pokemon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4d6025c5]" started-at="2021-01-28T21:06:12Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:06:12Z" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Death note]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Link_Rotos()[pri:0, instance:com.Jikan_Test.Test_Page@4d6025c5]" started-at="2021-01-28T21:06:12Z" name="Validar_Link_Rotos" finished-at="2021-01-28T21:06:12Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Link_Rotos -->
+      </class> <!-- com.Jikan_Test.Test_Page -->
+    </test> <!-- Test on FireFox landing page Jikan -->
+    <test started-at="2021-01-29T02:06:12Z" name="Test on Edge landing page Jikan" finished-at="2021-01-29T02:07:14Z" duration-ms="62050">
+      <class name="com.Jikan_Test.Test_Page">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4f4c4b1a]" started-at="2021-01-28T21:06:12Z" name="setUp" finished-at="2021-01-28T21:06:12Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://jikan.moe/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: DevToolsActivePort file doesn't exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AV25071', ip: '172.18.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00007FF683E7F8F2+4258034]
+	Ordinal0 [0x00007FF683D54499+3032217]
+	Ordinal0 [0x00007FF683BAD267+1299047]
+	Ordinal0 [0x00007FF683AF2B15+535317]
+	Ordinal0 [0x00007FF683AEC470+509040]
+	Ordinal0 [0x00007FF683B23382+734082]
+	Ordinal0 [0x00007FF683B1DDCF+712143]
+	Ordinal0 [0x00007FF683AF8CF5+560373]
+	Ordinal0 [0x00007FF683AF9ADB+563931]
+	Ordinal0 [0x00007FF683D71B08+3152648]
+	GetHandleVerifier [0x00007FF683FD15B2+1256722]
+	GetHandleVerifier [0x00007FF683FE3F36+1332886]
+	GetHandleVerifier [0x00007FF683FD1F79+1259225]
+	Ordinal0 [0x00007FF683D64CD5+3099861]
+	Ordinal0 [0x00007FF683D73EEB+3161835]
+	Ordinal0 [0x00007FF683D8A23A+3252794]
+	BaseThreadInitThunk [0x00007FF930B87034+20]
+	RtlUserThreadStart [0x00007FF930CBD0D1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn't exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AV25071', ip: '172.18.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00007FF683E7F8F2+4258034]
+	Ordinal0 [0x00007FF683D54499+3032217]
+	Ordinal0 [0x00007FF683BAD267+1299047]
+	Ordinal0 [0x00007FF683AF2B15+535317]
+	Ordinal0 [0x00007FF683AEC470+509040]
+	Ordinal0 [0x00007FF683B23382+734082]
+	Ordinal0 [0x00007FF683B1DDCF+712143]
+	Ordinal0 [0x00007FF683AF8CF5+560373]
+	Ordinal0 [0x00007FF683AF9ADB+563931]
+	Ordinal0 [0x00007FF683D71B08+3152648]
+	GetHandleVerifier [0x00007FF683FD15B2+1256722]
+	GetHandleVerifier [0x00007FF683FE3F36+1332886]
+	GetHandleVerifier [0x00007FF683FD1F79+1259225]
+	Ordinal0 [0x00007FF683D64CD5+3099861]
+	Ordinal0 [0x00007FF683D73EEB+3161835]
+	Ordinal0 [0x00007FF683D8A23A+3252794]
+	BaseThreadInitThunk [0x00007FF930B87034+20]
+	RtlUserThreadStart [0x00007FF930CBD0D1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
+	at com.Jikan_Test.Base.IEDriverConnection(Base.java:34)
+	at com.Jikan_Test.Test_Page.setUp(Test_Page.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4f4c4b1a]" started-at="2021-01-28T21:07:14Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:07:14Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Naruto]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4f4c4b1a]" started-at="2021-01-28T21:07:14Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:07:14Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pokemon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Busqueda_Anime(java.lang.String)[pri:0, instance:com.Jikan_Test.Test_Page@4f4c4b1a]" started-at="2021-01-28T21:07:14Z" name="Validar_Busqueda_Anime" data-provider="Anime" finished-at="2021-01-28T21:07:14Z" duration-ms="1" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Death note]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Busqueda_Anime -->
+        <test-method signature="Validar_Link_Rotos()[pri:0, instance:com.Jikan_Test.Test_Page@4f4c4b1a]" started-at="2021-01-28T21:07:14Z" name="Validar_Link_Rotos" finished-at="2021-01-28T21:07:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validar_Link_Rotos -->
+      </class> <!-- com.Jikan_Test.Test_Page -->
+    </test> <!-- Test on Edge landing page Jikan -->
   </suite> <!-- Suite -->
 </testng-results>

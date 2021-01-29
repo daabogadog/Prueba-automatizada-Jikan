@@ -31,30 +31,210 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test on Chrome consultar pedido</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">28,3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test on Chrome landing page Jikan</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">72,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Test on FireFox landing page Jikan</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">61,6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test on Edge landing page Jikan</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">62,0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">3</td><td class="numi">3</td><td class="numi_attn">8</td><td class="numi_attn">1</td><td class="numi">196,6 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test on Chrome consultar pedido &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.Yale_Test_Automated.Consultar_Test_Pedido</td><td><a href="#m1"><b>Consultar</b>  </a></td><td class="numi">2</td><td>1608578400988</td><td class="numi">13095</td></tr><tr class="passedodd"><td><a href="#m2"><b>Consultar</b>  </a></td><td class="numi">2</td><td>1608578400988</td><td class="numi">13095</td></tr><tr class="passedodd"><td><a href="#m3"><b>Validar_Estados</b>  </a></td><td class="numi">1</td><td>1608578414085</td><td class="numi">6497</td></tr>
+<tr><th colspan="4">Test on Chrome landing page Jikan &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.Jikan_Test.Test_Page</td><td><a href="#m1"><b>Validar_Link_Rotos</b>  </a></td><td class="numi">1</td><td>1611885857180</td><td class="numi">53310</td></tr>
+<tr><th colspan="4">Test on Chrome landing page Jikan &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.Jikan_Test.Test_Page</td><td><a href="#m2"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885849930</td><td class="numi">7249</td></tr><tr class="passedodd"><td><a href="#m3"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885849930</td><td class="numi">7249</td></tr><tr class="passedodd"><td><a href="#m4"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885849930</td><td class="numi">7249</td></tr>
+<tr><th colspan="4">Test on FireFox landing page Jikan &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.Jikan_Test.Test_Page</td><td><a href="#m5"><b>setUp</b>  </a></td><td class="numi">1</td><td>1611885911220</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test on FireFox landing page Jikan &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">com.Jikan_Test.Test_Page</td><td><a href="#m6"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885972802</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m7"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885972802</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m8"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611885972802</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m9"><b>Validar_Link_Rotos</b>  </a></td><td class="numi">1</td><td>1611885972806</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Test on Edge landing page Jikan &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.Jikan_Test.Test_Page</td><td><a href="#m10"><b>setUp</b>  </a></td><td class="numi">1</td><td>1611885972819</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test on Edge landing page Jikan &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">com.Jikan_Test.Test_Page</td><td><a href="#m11"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611886034862</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m12"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611886034862</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m13"><b>Validar_Busqueda_Anime</b>  </a></td><td class="numi">3</td><td>1611886034862</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m14"><b>Validar_Link_Rotos</b>  </a></td><td class="numi">1</td><td>1611886034867</td><td class="numi">0</td></tr>
 </table>
-<h1>Test on Chrome consultar pedido</h1>
-<h2 id="m1">com.Yale_Test_Automated.Consultar_Test_Pedido:Consultar</h2>
+<h1>Test on Chrome landing page Jikan</h1>
+<h2 id="m1">com.Jikan_Test.Test_Page:Validar_Link_Rotos</h2>
+<div style="padding-left:3em">
+<p>Existen link rotos expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at com.Jikan_Test.Test_Page.Validar_Link_Rotos(Test_Page.java:84)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>1</td>
-<td>Orden de venta (OV)</td>
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Pokemon</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.Yale_Test_Automated.Consultar_Test_Pedido:Consultar</h2>
+<h2 id="m3">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>2</td>
-<td>Número de Guía</td>
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Death note</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.Yale_Test_Automated.Consultar_Test_Pedido:Validar_Estados</h2>
+<h2 id="m4">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Naruto</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test on FireFox landing page Jikan</h1>
+<h2 id="m5">com.Jikan_Test.Test_Page:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>https://jikan.moe/</td>
+<td>Firefox</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AV25071&apos;, ip: &apos;172.18.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: </p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+<br/>at com.Jikan_Test.Base.FirefoxDriverConnection(Base.java:28)
+<br/>at com.Jikan_Test.Test_Page.setUp(Test_Page.java:35)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Death note</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Pokemon</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Naruto</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.Jikan_Test.Test_Page:Validar_Link_Rotos</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test on Edge landing page Jikan</h1>
+<h2 id="m10">com.Jikan_Test.Test_Page:setUp</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>https://jikan.moe/</td>
+<td>Edge</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>unknown error: DevToolsActivePort file doesn&apos;t exist
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AV25071&apos;, ip: &apos;172.18.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00007FF683E7F8F2+4258034]
+	Ordinal0 [0x00007FF683D54499+3032217]
+	Ordinal0 [0x00007FF683BAD267+1299047]
+	Ordinal0 [0x00007FF683AF2B15+535317]
+	Ordinal0 [0x00007FF683AEC470+509040]
+	Ordinal0 [0x00007FF683B23382+734082]
+	Ordinal0 [0x00007FF683B1DDCF+712143]
+	Ordinal0 [0x00007FF683AF8CF5+560373]
+	Ordinal0 [0x00007FF683AF9ADB+563931]
+	Ordinal0 [0x00007FF683D71B08+3152648]
+	GetHandleVerifier [0x00007FF683FD15B2+1256722]
+	GetHandleVerifier [0x00007FF683FE3F36+1332886]
+	GetHandleVerifier [0x00007FF683FD1F79+1259225]
+	Ordinal0 [0x00007FF683D64CD5+3099861]
+	Ordinal0 [0x00007FF683D73EEB+3161835]
+	Ordinal0 [0x00007FF683D8A23A+3252794]
+	BaseThreadInitThunk [0x00007FF930B87034+20]
+	RtlUserThreadStart [0x00007FF930CBD0D1+33]
+</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<br/>at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+<br/>at com.Jikan_Test.Base.IEDriverConnection(Base.java:34)
+<br/>at com.Jikan_Test.Test_Page.setUp(Test_Page.java:37)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.Jikan_Test.Test_Page:Validar_Link_Rotos</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Death note</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Naruto</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.Jikan_Test.Test_Page:Validar_Busqueda_Anime</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Pokemon</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
